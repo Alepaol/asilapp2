@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:seriesType="bar"
+        fab:layout_constraintBottom_toTopOf="@+id/divider"
+        fab:layout_constraintHorizontal_bias="1.0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerMeasurements"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        fab:layout_constraintBottom_toBottomOf="parent"
+        fab:layout_constraintEnd_toEndOf="parent"
+        fab:layout_constraintHorizontal_bias="0.046"
+        fab:layout_constraintStart_toStartOf="parent"
+        fab:layout_constraintTop_toBottomOf="@+id/graph"
+        fab:layout_constraintVertical_bias="1.0" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        app:fab_hideAnimation="@anim/fab_scale_down"
+        app:fab_showAnimation="@anim/fab_scale_up"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        fab:layout_constraintBottom_toBottomOf="parent"
+        fab:layout_constraintEnd_toEndOf="parent"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#DA4336"
+        fab:menu_colorPressed="#E75043"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add_measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_label="@string/fab_add_measurement"
+            fab:fab_size="mini"
+            fab:menu_icon="@drawable/fab_add" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add_measurement_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_label="@string/fab_add_measurement_bt"
+            fab:fab_size="mini"
+            fab:menu_icon="@drawable/fab_add" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        fab:layout_constraintBottom_toTopOf="@+id/recyclerMeasurements"
+        fab:layout_constraintEnd_toEndOf="parent"
+        fab:layout_constraintStart_toStartOf="parent"
+        fab:layout_constraintTop_toBottomOf="@+id/graph" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        fab:layout_constraintBottom_toTopOf="@+id/graph"
+        fab:layout_constraintEnd_toEndOf="parent"
+        fab:layout_constraintStart_toStartOf="parent"
+        fab:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

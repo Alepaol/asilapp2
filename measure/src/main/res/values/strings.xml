@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Measure</string>
+    <string name="title_activity_measurements">Measurements</string>
+
+    <string name="measurement_date">Date of Measurement</string>
+    <string name="type_of_measurement">Type of Measurement</string>
+    <string name="Description">Description</string>
+
+
+    <!--Bluetooth -->
+    <string name="ble_not_supported">Bluetooth Le not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_stop">Stop scan</string>
+    <string name="action_refresh">Refresh </string>
+    <string name="action_scan">Scan</string>
+
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="no_data">No data</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_refresh">refresh</string>
+    <string name="fab_add_measurement">Add measurement</string>
+    <string name="fab_add_measurement_bt">Add Measurement by bluetooth</string>
+    <!-- Add measurement-->
+    <string name="hint_description">Description</string>
+    <string name="hint_diastolic">Diastolic</string>
+    <string name="hint_systolic">Systolic</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Main activity-->
+    <string name="title_diary">Diary</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_chat">Chat</string>
+    <!--Log_in-->
+    <string name="sign_out">Sign out</string>
+    <string name="type_a_message">type a message</string>
+    <string name="send_button_label">send</string>
+
+</resources>
